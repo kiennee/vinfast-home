@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://storage.googleapis.com/vinfast-data-01/Vinfast-logo.png" type="image/png">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/VinFast/style.css">
+    <link rel="stylesheet" href="./assets/css/VinFast/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Trang chủ</title>
+</head>
+<body>
+    <style>
+        .popup-front {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #00000080;
+            z-index: 9999;
+            display: none;
+        }
+
+        .img-close-popup {
+            position: absolute;
+            top: 0;
+            left: calc((100% - 540px)/2);
+            top: calc((100% - 435px)/2);
+            display: none;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 0;
+            right: 20px;
+            font-size: 30px;
+            color: #fff;
+            z-index: 10;
+        }
+
+        .close-popup:hover {
+            opacity: 0.5;
+        }
+    </style>
+    <div id="app">
+        <div class="popup-front">
+            <a href="#">
+                <div class="img-close-popup">
+                    <img src="./assets/img/vinfast-data-01/popup540x435(1)_1628505500.jpg" alt="">
+                    <div class="close-popup">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div id="header">
+            <div class="header-container">
+                <div class="container">
+                    <div class="header-nav-main">
+                        <div class="user-toggle-btn">
+                            <i class="far fa-user-circle"></i>
+                        </div>
+                        <div class="header-nav-left">
+                            <div class="header-logo">
+                                <a href="index.html">
+                                    <img class="logo-main" src="./assets/img/vinfast/logo.svg" alt="">
+                                    <img class="logo-main-w" src="./assets/img/vinfast/logo-w.png" alt="">
+                                </a>
+                            </div>
+                            <div class="header-column">
+                                <ul class="header-list-items ">
+                                    <li class="header-list-item">
+                                        <a href="">Ô tô</a>
+                                        <div class="header-list-menu">
+                                            <div class="container">
+                                                <div class="block-car grid">
+                                                    <div class="hd-header">
+                                                        <nav>
+                                                            <div class="nav nav-tabs">
+                                                                <a href="" class="nav-item active">Động cơ xăng</a>
+                                                                <a href="" class="nav-item">Động cơ điện</a>
+                                                            </div>
+                                                        </nav>
+                                                        <div class="pop-tu-van">
+                                                            <a href=""> 
+                                                                <img src="./assets/img/vinfast-data-01/tag_yctv.svg" alt="" height="18" width="18">
+                                                                Yêu cầu tư vấn
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-content active row">
+                                                        <div class="tab-content-list-cars l-3">
+                                                            <div class="tab-content-car">
+                                                                <a href="">
+                                                                    <img class="img-mega-menu" data-src="./assets/img/vinfast-data-01/Fadil.svg" alt="Fadil" width="270" height="150" src="./assets/img/vinfast-data-01/Fadil.svg">
+                                                                </a>
+                                                                <h4 class="item-name text-center">Fadil</h4>
+                                                                <span class="slogan-transport text-center">Tối ưu mọi trải nghiệm</span>
+                                                                <div class="price text-center">Từ 336.500.000 vnđ</div>
+                                                            </div>
+                                                            <div class="link text-center">
+                                                                <a href="">Xem chi tiết</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-content-list-cars l-3">
+                                                            <div class="tab-content-car">
+                                                                <a href="">
+                                                                    <img class="img-mega-menu" data-src="./assets/img/vinfast-data-01/LUX_A_2.0.svg" alt="Fadil" width="270" height="150" src="./assets/img/vinfast-data-01/LUX_A_2.0.svg">
+                                                                </a>
+                                                                <h4 class="item-name text-center">LUX A2.0</h4>
+                                                                <span class="slogan-transport text-center">Tận hưởng từng khoảnh khắc</span>
+                                                                <div class="price text-center">Từ 881.695.000 vnđ</div>
+                                                            </div>
+                                                            <div class="link text-center">
+                                                                <a href="">Xem chi tiết</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-content-list-cars l-3">
+                                                            <div class="tab-content-car">
+                                                                <a href="">
+                                                                    <img class="img-mega-menu" data-src="./assets/img/vinfast-data-01/LUX_SA_2.0.svg" alt="Fadil" width="270" height="150" src="https://storage.googleapis.com/vinfast-data-01/LUX_SA_2.0.svg">
+                                                                </a>
+                                                                <h4 class="item-name text-center">LUX SA2.0</h4>
+                                                                <span class="slogan-transport text-center">Chinh phục mọi cung đường</span>
+                                                                <div class="price text-center">Từ 1.126.165.000 vnđ</div>
+                                                            </div>
+                                                            <div class="link text-center">
+                                                                <a href="">Xem chi tiết</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-content-list-cars l-3">
+                                                            <div class="tab-content-car">
+                                                                <a href="">
+                                                                    <img class="img-mega-menu" data-src="./assets/img/vinfast-data-01/President.svg" alt="Fadil" width="270" height="150" src="./assets/img/vinfast-data-01/President.svg">
+                                                                </a>
+                                                                <h4 class="item-name text-center">President</h4>
+                                                                <span class="slogan-transport text-center">Dấu ấn người thủ lĩnh</span>
+                                                                <div class="price text-center">Từ 3.800.000.000 vnđ</div>
+                                                            </div>
+                                                            <div class="link text-center">
+                                                                <a href="">Xem chi tiết</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-content row">
+                                                        <div class="tab-content-list-cars l-3">
+                                                            <div class="tab-content-car">
+                                                                <a href="">
+                                                                    <img class="img-mega-menu" data-src="./assets/img/vinfast-data-01/Fadil.svg" alt="Fadil" width="270" height="150" src="./assets/img/vinfast-data-01/Fadil.svg">
+                                                                </a>
+                                                                <h4 class="item-name text-center">Fadil</h4>
+                                                                <span class="slogan-transport text-center">Tối ưu mọi trải nghiệm</span>
+                                                                <div class="price text-center">Từ 336.500.000 vnđ</div>
+                                                            </div>
+                                                            <div class="link text-center">
+                                                                <a href="">Xem chi tiết</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="decscription">
+                                                        Chính sách bán hàng có thể được cập nhật theo chính sách của VinFast tại từng thời điểm
+                                                    </div>
+                                                    <div class="view-all">
+                                                        <a href="#">Xem tất cả xe</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header-list-item header-list-scooter">
+                                        <a href="">Xe máy điện</a>
+                                        <div class="header-list-menu">
+                                            <div class="container">
+                                                <div class="block-car grid">
+                                                    <div class="hd-header">
+                                                        <nav>
+                                                            <div class="nav nav-tabs">
+                                                                <a href="" class="nav-item active">Phổ thông</a>
+                                                                <a href="" class="nav-item">Trung cấp</a>
+                                                                <a href="" class="nav-item">Cao cấp</a>
+                                                            </div>
+                                                        </nav>
+                                                        <div class="pop-tu-van">
+                                                            <a href="">
+                                                                <img src="./assets/img/vinfast-data-01/tag_yctv.svg" alt="" height="18" width="18">
+                                                                Yêu cầu tư vấn
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-content active row">
+                                                        <div class="tab-content-list-cars l-3">
+                                                            <div class="tab-content-car">
+                                                                <a href="">
+                                                                    <img class="img-mega-menu" data-src="./assets/img/vinfast-data-01/Impes.svg" alt="Fadil" width="270" height="150" src="./assets/img/vinfast-data-01/Impes.svg">
+                                                                </a>
+                                                                <h4 class="item-name text-center">Impes</h4>
+                                                                <span class="slogan-transport text-center">Dáng sành điệu - Kiểu chất chơi</span>
+                                                                <div class="price text-center">Từ 14.900.000 vnđ</div>
+                                                            </div>
+                                                            <div class="link text-center">
+                                                                <a href="">Xem chi tiết</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-content-list-cars l-3">
+                                                            <div class="tab-content-car">
+                                                                <a href="">
+                                                                    <img class="img-mega-menu" data-src="./assets/img/vinfast-data-01/Ludo.svg" alt="Fadil" width="270" height="150" src="./assets/img/vinfast-data-01/Ludo.svg">
+                                                                </a>
+                                                                <h4 class="item-name text-center">Ludo</h4>
+                                                                <span class="slogan-transport text-center">Tỏa chất riêng - Bật cá tính</span>
+                                                                <div class="price text-center">Từ 12.900.000 vnđ</div>
+                                                            </div>
+                                                            <div class="link text-center">
+                                                                <a href="">Xem chi tiết</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-content row">
+                                                        <div class="tab-content-list-cars l-3">
+                                                            <div class="tab-content-car">
+                                                                <a href="">
+                                                                    <img class="img-mega-menu" data-src="./assets/img/vinfast-data-01/Faliz.svg" alt="Fadil" width="270" height="150" src="./assets/img/vinfast-data-01/Faliz.svg">
+                                                                </a>
+                                                                <h4 class="item-name text-center">Feliz</h4>
+                                                                <span class="slogan-transport text-center">Sống xanh thanh lịch</span>
+                                                                <div class="price text-center">Từ 24.900.000 vnđ</div>
+                                                            </div>
+                                                            <div class="link text-center">
+                                                                <a href="">Xem chi tiết</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-content-list-cars l-3">
+                                                            <div class="tab-content-car">
+                                                                <a href="">
+                                                                    <img class="img-mega-menu" data-src="./assets/img/vinfast-data-01/KlaraS.svg" alt="Fadil" width="270" height="150" src="./assets/img/vinfast-data-01/KlaraS.svg">
+                                                                </a>
+                                                                <h4 class="item-name text-center">Klara S</h4>
+                                                                <span class="slogan-transport text-center">Khởi đầu phong cách mới</span>
+                                                                <div class="price text-center">Từ 39.900.000 vnđ</div>
+                                                            </div>
+                                                            <div class="link text-center">
+                                                                <a href="">Xem chi tiết</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-content-list-cars l-3">
+                                                            <div class="tab-content-car">
+                                                                <a href="">
+                                                                    <img class="img-mega-menu" data-src="./assets/img/vinfast-data-01/KlaraS.svg" alt="Fadil" width="270" height="150" src="./assets/img/vinfast-data-01/KlaraS.svg">
+                                                                </a>
+                                                                <h4 class="item-name text-center">Klara A2</h4>
+                                                                <span class="slogan-transport text-center">Năng động, hiện đại thân thiện môi trường</span>
+                                                                <div class="price text-center">Từ 26.900.000 vnđ</div>
+                                                            </div>
+                                                            <div class="link text-center">
+                                                                <a href="">Xem chi tiết</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-content row">
+                                                        <div class="tab-content-list-cars l-3">
+                                                            <div class="tab-content-car">
+                                                                <a href="">
+                                                                    <img class="img-mega-menu" data-src="./assets/img/vinfast-data-01/Theon.svg" alt="Fadil" width="270" height="150" src="./assets/img/vinfast-data-01/Theon.svg">
+                                                                </a>
+                                                                <h4 class="item-name text-center">Theon</h4>
+                                                                <span class="slogan-transport text-center">Công nghệ bứt phá - Trải nghiệm đỉnh cao</span>
+                                                                <div class="price text-center">Từ 63.900.000 vnđ</div>
+                                                            </div>
+                                                            <div class="link text-center">
+                                                                <a href="">Xem chi tiết</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="decscription">
+                                                        Chính sách bán hàng có thể được cập nhật theo chính sách của VinFast tại từng thời điểm
+                                                    </div>
+                                                    <div class="view-all">
+                                                        <a href="#">Xem tất cả xe</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header-list-item">
+                                        <a href="">Ưu đãi</a>
+                                    </li>
+                                    <li class="header-list-item header-list-service">
+                                        <a href="">Dịch Vụ</a>
+                                        <div class="header-list-menu">
+                                            <div class="container">
+                                                <div class="block-car grid">
+                                                    <div class="hd-header">
+                                                        <nav>
+                                                            <div class="nav nav-tabs">
+                                                                <a href="" class="nav-item active">Ô tô</a>
+                                                                <a href="" class="nav-item">Xe máy điện</a>
+                                                            </div>
+                                                        </nav>
+                                                    </div>
+                                                    <div>
+                                                        <div class="tab-content active">
+                                                            <div class="mega-dichvu">
+                                                                <div class="row" style="margin-left: 0;margin-right: 0;">
+                                                                    <div>
+                                                                        <div class="mega-title">Bảo hành & dịch vụ</div>
+                                                                        <ul>
+                                                                            <li>Bảo hành</li>
+                                                                            <li>Dịch vụ</li>
+                                                                        </ul>
+                                                                        <div class="mega-title">Tài liệu tải về</div>
+                                                                        <ul>
+                                                                            <li>Ô tô</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="mega-title">Dịch vụ bảo dưỡng</div>
+                                                                        <ul>
+                                                                            <li>Bảo dưỡng định kỳ</li>
+                                                                            <li>Đặt lịch bảo dưỡng</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="img-mega-menu">
+                                                                    <img src="./assets/img/vinfast/mega_oto.svg" alt="mega_oto">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <div class="mega-dichvu">
+                                                                <div class="row" style="margin-left: 0;margin-right: 0;">
+                                                                    <div>
+                                                                        <div class="mega-title">Bảo hành & dịch vụ</div>
+                                                                        <ul>
+                                                                            <li>Bảo hành</li>
+                                                                            <li>Dịch vụ</li>
+                                                                        </ul>
+                                                                        <div class="mega-title">Tài liệu tải về</div>
+                                                                        <ul>
+                                                                            <li>Xe máy điện</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="mega-title">Dịch vụ bảo dưỡng</div>
+                                                                        <ul>
+                                                                            <li>Bảo dưỡng định kỳ</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="img-mega-menu">
+                                                                    <img src="./assets/img/vinfast/mega_xe_may.svg" alt="mega_oto">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header-list-item">
+                                        <a href="">Công cụ</a>
+                                        <div class="block-menucongcu">
+                                            <div class="container">
+                                                <div class="block-car grid">
+                                                    <div>
+                                                        <div class="tab-content active">
+                                                            <div class="mega-congcu">
+                                                                <div class="row">
+                                                                    <div class="l-6">
+                                                                        <ul>
+                                                                            <li class="custom-menu-item">Chi phí lăn bánh</li>
+                                                                            <li class="custom-menu-item">Thẩm định vay</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="l-6">
+                                                                        <ul>
+                                                                            <li class="custom-menu-item">So sánh xe</li>
+                                                                            <li class="custom-menu-item">Đặt lịch dịch vụ</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="field-name">
+                                                                    <img src="./assets/img/vinfast-data-01/Rectangle 6338 (3)_1627879460.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-nav-right ">
+                            <div class="box-car-head">
+                                <a href="" >
+                                    <span>Đăng ký lái thử</span>
+                                </a>
+                            </div>
+                            <div style="width: 15px; margin-left: 25px; font-size: 16px">
+                                <a href="https://vinfastauto.com/vn_vi/user">
+                                    <i class="far fa-user"></i>
+                                </a>
+                            </div>
+                            <div class="switch-language">
+                                <div class="language-vn active">
+                                    <span>VN</span>
+                                </div>
+                                <div class="language-en">
+                                    <span>EN</span>
+                                </div>
+                            </div>
+                            <div id="menu-nav-right">
+                                <div id="nav-icon-region">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="menu-position-right">
+                                    <ul>
+                                        <li><a href="#">Hệ thống showroom và đại lý</a></li>
+                                        <li><a href="#">Hệ sinh thái pin và trạm sạc</a></li>
+                                        <li><a href="#">Đối tác trạm sạc</a></li>
+                                        <li><a href="#">Tin tức</a></li>
+                                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                                        <li><a href="#">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-toggle-btn">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-full">
+                <ul class="mobile-slide-menu">
+                    <li class="mobile-menu-item"><a href="">Ô TÔ</a></li>
+                    <li class="mobile-menu-item"><a href="">XE MÁY ĐIỆN</a></li>
+                    <li class="mobile-menu-item"><a href="">ƯU ĐÃI</a></li>
+                    <li class="mobile-menu-item"><a href="">DỊCH VỤ</a></li>
+                    <li class="mobile-menu-item"><a href="">CÔNG CỤ</a></li>
+                    <li class="mobile-menu-item"><a href="" class="button-register-drive">ĐĂNG KÝ LÁI THỬ</a></li>
+                    <li class="mobile-menu-item"><a href="">HỆ THỐNG SHOWROOM VÀ ĐẠI LÝ</a></li>
+                    <li class="mobile-menu-item"><a href="">HỆ SINH THÁI PIN VÀ TRẠM SẠC</a></li>
+                    <li class="mobile-menu-item"><a href="">ĐỐI TÁC TRẠM SẠC</a></li>
+                    <li class="mobile-menu-item"><a href="">TIN TỨC</a></li>
+                    <li class="mobile-menu-item"><a href="">CÂU HỎI THƯỜNG GẶP</a></li>
+                    <li class="mobile-menu-item"><a href="">LIÊN HỆ</a></li>
+                    <li class="mobile-menu-item">
+                        <div class="switch-language">
+                            <span>Ngôn ngữ</span>
+                            <div class="language-vn active">
+                                <span>VN</span>
+                            </div>
+                            <div class="language-en">
+                                <span>EN</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="slide">
+            <div class="inner">
+                <div class="block-slide-img">
+                    <div class="slide-img">
+                        <a href="https://shop.vinfastauto.com/vn_vi/vinfast-cars.html" style="display: block; width: 100vw;">
+                            <img src="./assets/img/vinfast-data-01/KV CSBH -1280 x 554_1628506022.jpg" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="slide-img">
+                        <a href="https://shop.vinfastauto.com/vn_vi/vinfast-cars.html" style="display: block; width: 100vw;">
+                            <img src="./assets/img/Block-slide-img/KV CSBH -1280 x 554-New_1627699076.jpg" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="slide-img">
+                        <a href="https://shop.vinfastauto.com/vn_vi/car-vfe34.html" style="display: block; width: 100vw;">
+                            <img src="./assets/img/Block-slide-img/vi_VFe34 NewKV_banner_1627116002.jpg" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="slide-img">
+                        <a href="https://shop.vinfastauto.com/vn_vi/vinfast-bike.html" style="display: block; width: 100vw;">
+                            <img src="./assets/img/Block-slide-img/_vi_Klara_1625736876.jpg" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="slide-img">
+                        <a href="https://shop.vinfastauto.com/vn_vi/vinfast-bike.html" style="display: block; width: 100vw;">
+                            <img src="./assets/img/Block-slide-img/CSBHT7_ludo&impes__1626150463.jpg" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <!-- <i class="fas fa-chevron-left" id="slide-pre"></i> -->
+                    <!-- <i class="fas fa-chevron-right" id="slide-next"></i> -->
+                    <div id="slide-pre">
+                        <svg viewBox="0 0 20 20" width="100%" height="100%" ><path d="M12.2 4.53 6.727 10l5.47 5.47a.75.75 0 0 1-1.061 1.06l-6-6a.751.751 0 0 1 0-1.06l6-6A.75.75 0 1 1 12.2 4.53z"></path></svg>
+                    </div>
+                    <div id="slide-next">
+                        <svg viewBox="0 0 20 20" width="100%" height="100%" ><path d="M7.8 4.53 13.273 10 7.8 15.47a.75.75 0 0 0 1.061 1.06l6-6a.751.751 0 0 0 0-1.06l-6-6A.75.75 0 0 0 7.8 4.53z"></path></svg>
+                    </div>
+                </div>
+                <div class="sr-mb">
+                    <div class="slogan">
+                        CÙNG BẠN
+                        <br>
+                        BỨT PHÁ MỌI GIỚI HẠN
+                    </div>
+                    <div class="title">Với tầm nhìn toàn cầu, VinFast sáng tạo không ngừng nghỉ để mang lại những sản phẩm đẳng cấp, trải nghiệm thông minh và giá trị vượt trội cho khách hàng.</div>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="block-trangchu">
+                <div class="block1">
+                    <div class="container">
+                        <div class="swiper-container">
+                            <div class="block-slide-container active">
+                                <img src="./assets/img/Block-slide-img/block11.png" alt="">
+                                <div class="block-decscription-right">
+                                    <h2 class="title">CÔNG NGHỆ THÔNG MINH CHO TƯƠNG LAI</h2>
+                                    <span class="decscription">Đặt khách hàng làm trọng tâm, các mẫu xe thông minh của VinFast được ứng dụng những công nghệ ưu việt hàng đầu thế giới như trí tuệ nhân tạo, máy học và học sâu cùng các tính năng tự hành cấp độ cao, mở ra không gian hưởng thụ tiện nghi, giải trí hoàn hảo cùng trải nghiệm cá nhân hóa đáng giá nhất. </span>
+                                    
+                                </div>
+                            </div>
+                            <div class="block-slide-container">
+                                <img src="./assets/img/Block-slide-img/block13.png" alt="" style="width: 100%;">
+                                <div class="block-decscription-right">
+                                    <h2 class="title">THIẾT KẾ ĐẦY ĐAM MÊ</h2>
+                                    <span class="decscription">Kết hợp với nhà thiết kế xe nổi tiếng thế giới Pininfarina, VinFast mang đến chất lượng thiết kế đẳng cấp cho từng dòng xe. Theo đuổi triết lý trải nghiệm chạm sinh học, những chiếc xe VinFast sở hữu vẻ ngoài sang trọng đặc trưng cùng khoang nội thất đậm chất tương lai, được chăm chút trong từng chi tiết</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="block-slide-container">
+                                <img src="./assets/img/Block-slide-img/block14.png" alt="" style="width: 100%;">
+                                <div class="block-decscription-right">
+                                    <h2 class="title">ĐẲNG CẤP AN TOÀN QUỐC TẾ</h2>
+                                    <span class="decscription">Đặt sự an tâm của khách hàng lên trên hết, những chiếc xe của VinFast được trang bị các tính năng an toàn tối tân nhất để bảo vệ người lái và mọi hành khách trên xe, đáp ứng tiêu chuẩn khắt khe của các tổ chức đánh giá xe uy tín hàng đầu thế giới như ASEAN NCAP, EURO NCAP, NHTSA...</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="block-slide-container">
+                                <img src="./assets/img/Block-slide-img/block15.png" alt="" style="width: 100%;">
+                                <div class="block-decscription-right">
+                                    <h2 class="title">TRẢI NGHIỆM XUẤT SẮC</h2>
+                                    <span class="decscription">Sở hữu xe VinFast chính là tận hưởng những giá trị tốt nhất của một hệ sinh thái đẳng cấp, từ mô hình O2O tích hợp thương mại điện tử và trải nghiệm tại hệ thống Đại lý/Showroom/trạm sạc rộng khắp, tới chất lượng dịch vụ hậu mãi vượt trội và sự tân tâm trong từng khoảnh khắc của khách hàng.</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="block-slide-container">
+                                <img src="./assets/img/Block-slide-img/block12.png" alt="" style="width: 100%;">
+                                <div class="block-decscription-right">
+                                    <h2 class="title">CHÍNH SÁCH THẤU HIỂU</h2>
+                                    <span class="decscription">Mong muốn mọi người được sở hữu những chiếc xe tốt nhất, VinFast luôn sáng tạo với chính sách sách bán hàng và hậu mãi có lợi nhất cho khách hàng. VinFast cũng tiên phong thúc đẩy xu hưởng sử dụng xe điện, hướng tới một tương lai xanh, bền vững hơn bằng chính sách pin độc đáo và chế độ bảo hành 10 năm duy nhất trên thị trường cho ô tô điện</span>
+                                    
+                                </div>
+                            </div>
+                            <ul class="block-list-number">
+                                <li class="block-number active">01</li>
+                                <li class="block-number">02</li>
+                                <li class="block-number">03</li>
+                                <li class="block-number">04</li>
+                                <li class="block-number">05</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="block2">
+                    <div class="block-title">
+                        Hành trình
+                        <br>
+                        chinh phục thế giới
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="quote">
+                                        “VinFast, thương hiệu ô tô Việt thuộc Tập đoàn Vingroup là điển hình tiêu biểu của việc nhanh chóng phục hồi và có tiến bước nhanh chóng sau khi Việt Nam thành công chống dịch Covid...”
+                                    </div>
+                                    <div class="arthor">- Bloomberg -</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-prev">
+                                <div class="item">
+                                    <div class="quote">
+                                        “Trong ngành công nghiệp xe hơi, việc thiết kế và chế tạo không chỉ một mà hai chiếc xe chỉ trong vòng 12 tháng là tốc độ không tưởng”
+                                    </div>
+                                    <div class="arthor">- Top Gear -</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-active">
+                                <div class="item">
+                                    <div class="quote">
+                                        “Chìa khóa để đạt thành công ngay từ khâu sản xuất của VinFast chính là các đối tác mạnh mẽ như ABB, Bosch, Magna Steyr và Siemens”
+                                    </div>
+                                    <div class="arthor">- CNBC -</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-next">
+                                <div class="item">
+                                    <div class="quote">
+                                        “VinFast, thương hiệu ô tô Việt thuộc Tập đoàn Vingroup là điển hình tiêu biểu của việc nhanh chóng phục hồi và có tiến bước nhanh chóng sau khi Việt Nam thành công chống dịch Covid...”
+                                    </div>
+                                    <div class="arthor">- Bloomberg -</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="quote">
+                                        “Trong ngành công nghiệp xe hơi, việc thiết kế và chế tạo không chỉ một mà hai chiếc xe chỉ trong vòng 12 tháng là tốc độ không tưởng”
+                                    </div>
+                                    <div class="arthor">- Top Gear -</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="quote">
+                                        “Chìa khóa để đạt thành công ngay từ khâu sản xuất của VinFast chính là các đối tác mạnh mẽ như ABB, Bosch, Magna Steyr và Siemens”
+                                    </div>
+                                    <div class="arthor">- CNBC -</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="quote">
+                                        “VinFast, thương hiệu ô tô Việt thuộc Tập đoàn Vingroup là điển hình tiêu biểu của việc nhanh chóng phục hồi và có tiến bước nhanh chóng sau khi Việt Nam thành công chống dịch Covid...”
+                                    </div>
+                                    <div class="arthor">- Bloomberg -</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination">
+                        <div class="pie-countdown pie-countdown-swiper pie-countdown-swiper-active">
+                            <div class="wrapper-circle" data-anim="base wrapper">
+                                <div class="circle" data-anim="base left"></div>
+                                <div class="circle" data-anim="base right"></div>
+                            </div>
+                            <label class="dot"></label>
+                        </div>
+                        <div class="pie-countdown pie-countdown-swiper">
+                            <span></span>
+                        </div>
+                        <div class="pie-countdown pie-countdown-swiper">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="block-title">XE Ô TÔ</div>
+                </div>
+            </div>
+            <div class="block3">
+                <div class="swiper-container">
+                    <div class="row swiper-wrapper">
+                    
+                    </div>
+                    <div class="swiper-pagination">
+                        <div class="pie-countdown pie-countdown-swiper pie-countdown-swiper-active">
+                            <div class="wrapper-circle" data-anim="base wrapper">
+                                <div class="circle" data-anim="base left"></div>
+                                <div class="circle" data-anim="base right"></div>
+                            </div>
+                            <label class="dot"></label>
+                        </div>
+                        <div class="pie-countdown pie-countdown-swiper">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block4">
+                <div class="block-title">XE MÁY ĐIỆN</div>
+                <div class="swiper-container">
+                    <div class="row swiper-wrapper">
+                    
+                    </div>
+                    <div class="swiper-pagination">
+                        <div class="pie-countdown pie-countdown-swiper pie-countdown-swiper-active">
+                            <div class="wrapper-circle" data-anim="base wrapper">
+                                <div class="circle" data-anim="base left"></div>
+                                <div class="circle" data-anim="base right"></div>
+                            </div>
+                            <label class="dot"></label>
+                        </div>
+                        <div class="pie-countdown pie-countdown-swiper">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block5">
+                <div class="block-title">VIDEO NỔI BẬT</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="l-8 m-8 c-12" style="height: 425px; padding-right: 5px;">
+                            <iframe style="overflow:hidden;height:100%;width:100%" height="100%" width="100%" loading="lazy" src="https://www.youtube.com/embed/wcrY5dqBD7E?version=3&amp;enablejsapi=1" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/wcrY5dqBD7E?version=3&amp;enablejsapi=1><img src=https://img.youtube.com/vi/wcrY5dqBD7E/hqdefault.jpg alt=''><span>▶</span></a>" frameborder="0" allowfullscreen="" wmode="Opaque" __idm_id__="1029844993"></iframe>    
+                        </div>
+                        <div class="l-4 m-4 c-12">
+                            <iframe style="overflow:hidden;height:210px;width:100%" height="100%" width="100%" loading="lazy" src="https://www.youtube.com/embed/CAYoQjEFyR8?version=3&amp;enablejsapi=1" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/CAYoQjEFyR8?version=3&amp;enablejsapi=1><img src=https://img.youtube.com/vi/CAYoQjEFyR8/hqdefault.jpg alt=''><span>▶</span></a>" frameborder="0" allowfullscreen="" wmode="Opaque"></iframe>
+                            <iframe style="overflow:hidden;height:210px;width:100%" height="100%" width="100%" loading="lazy" src="https://www.youtube.com/embed/0s4YUBrMnHk?version=3&amp;enablejsapi=1" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/0s4YUBrMnHk?version=3&amp;enablejsapi=1><img src=https://img.youtube.com/vi/0s4YUBrMnHk/hqdefault.jpg alt=''><span>▶</span></a>" frameborder="0" allowfullscreen="" wmode="Opaque"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="block5-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="l-12 c-12 m-12">
+                                <div class="block5-footer-title">
+                                    <div>TIN TỨC PHỔ BIẾN</div>
+                                    <a href=""><span>Xem thêm</span></a>
+                                </div>
+                            </div>
+                            <div class="l-12">
+                                <div class="row">
+                                    <div class="l-4 m-6 c-12">
+                                        <div class="view-content">
+                                            <a href="">
+                                                <div class="promo-img">
+                                                    <img src="./assets/img/vinfast-data-01/styles/news/VF33_front.jpg" alt="">
+                                                    <div class="view">
+                                                        <img style="width: 14px; height: 14px" src="./assets/img/vinfast/view-white.svg" alt="">
+                                                        <p>34,123</p>
+                                                    </div>
+                                                </div>
+                                                <div class="l-12 promo-des">
+                                                    <p>Công ty</p>
+                                                    <h3>VinFast ra mắt 3 dòng ô tô điện tự lái - khẳng định tầm nhìn trở thành hãng xe điện thông minh toàn cầu</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="l-4 m-6 c-12">
+                                        <div class="view-content">
+                                            <a href="">
+                                                <div class="promo-img">
+                                                    <img src="./assets/img/vinfast-data-01/styles/news/tram sac vinfast.jpg" alt="">
+                                                    <div class="view">
+                                                        <img style="width: 14px; height: 14px" src="./assets/img/vinfast/view-white.svg" alt="">
+                                                        <p>26,621</p>
+                                                    </div>
+                                                </div>
+                                                <div class="l-12 promo-des">
+                                                    <p>Công ty</p>
+                                                    <h3>Tìm hiểu hệ sinh thái trạm sạc xe điện VinFast trên toàn quốc</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="l-4 m-6 c-12">
+                                        <div class="view-content">
+                                            <a href="">
+                                                <div class="promo-img">
+                                                    <img src="./assets/img/vinfast-data-01/styles/news/President_11 (1).jpg" alt="">
+                                                    <div class="view">
+                                                        <img style="width: 14px; height: 14px" src="./assets/img/vinfast/view-white.svg" alt="">
+                                                        <p>6,851</p>
+                                                    </div>
+                                                </div>
+                                                <div class="l-12 promo-des">
+                                                    <p>Xu hướng chung</p>
+                                                    <h3>VinFast President - phiên bản giới hạn dành riêng cho người Việt</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="l-4 m-6 c-12">
+                                        <div class="view-content">
+                                            <a href="">
+                                                <div class="promo-img">
+                                                    <img src="./assets/img/vinfast-data-01/styles/news/Thong-so-ky-thuat-o-to-dien-VinFast-VF-e34-chi-tiet-nhat_1626161954.png" alt="">
+                                                    <div class="view">
+                                                        <img style="width: 14px; height: 14px" src="./assets/img/vinfast/view-white.svg" alt="">
+                                                        <p>6,373</p>
+                                                    </div>
+                                                </div>
+                                                <div class="l-12 promo-des">
+                                                    <p>Xu hướng chung</p>
+                                                    <h3>Thông số kỹ thuật ô tô điện VinFast VF e34 chi tiết nhất</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="l-4 m-6 c-12">
+                                        <div class="view-content">
+                                            <a href="">
+                                                <div class="promo-img">
+                                                    <img src="./assets/img/vinfast-data-01/styles/news/OSxOF_thumb.jpg" alt="">
+                                                    <div class="view">
+                                                        <img style="width: 14px; height: 14px" src="./assets/img/vinfast/view-white.svg" alt="">
+                                                        <p>4,058</p>
+                                                    </div>
+                                                </div>
+                                                <div class="l-12 promo-des">
+                                                    <p>Công ty</p>
+                                                    <h3>VinFast thắng lớn, giành 3 giải nhất trong Bình chọn “Xe của năm 2021” tại Việt Nam</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="l-4 m-6 c-12">
+                                        <div class="view-content">
+                                            <a href="">
+                                                <div class="promo-img">
+                                                    <img src="./assets/img/vinfast-data-01/styles/news/photo1627316619261-16273166193421261355665_1627360497.jpg" alt="">
+                                                    <div class="view">
+                                                        <img style="width: 14px; height: 14px" src="./assets/img/vinfast/view-white.svg" alt="">
+                                                        <p>3,582</p>
+                                                    </div>
+                                                </div>
+                                                <div class="l-12 promo-des">
+                                                    <p>Công ty</p>
+                                                    <h3>Vingroup bổ nhiệm ông Michael Lohscheller làm Tổng giám đốc VinFast Toàn cầu</h3>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-0 m-12 c-12">
+                                <a class="block-title" href="">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="l-12 m-12 c-12">
+                        <img class="b-lazy" src="./assets/img/vinfast-data-01/logo_1627445467.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="l-2 m-4 c-12 list-menu">
+                        <h3 class="menu-title">GIỚI THIỆU</h3>
+                        <ul class="menu active">
+                            <li class="menu-item"><a href="">Về VinFast</a></li>
+                            <li class="menu-item"><a href="">Về Vingroup</a></li>
+                            <li class="menu-item"><a href="">Về Investor</a></li>
+                        </ul>
+                        <div class="caret-down"></div>
+                    </div>
+                    <div class="l-2 m-4 c-12 list-menu">
+                        <h3 class="menu-title">XE Ô TÔ</h3>
+                        <ul class="menu">
+                            <li class="menu-item"><a href="">VF e34</a></li>
+                            <li class="menu-item"><a href="">President</a></li>
+                            <li class="menu-item"><a href="">LUX SA2.0</a></li>
+                            <li class="menu-item"><a href="">LUX A2.0</a></li>
+                            <li class="menu-item"><a href="">Fadil</a></li>
+                        </ul>
+                        <div class="caret-down"></div>
+                    </div>
+                    <div class="l-2 m-4 c-12 list-menu">
+                        <h3 class="menu-title">XE MÁY ĐIỆN</h3>
+                        <ul class="menu">
+                            <li class="menu-item"><a href="">Theon</a></li>
+                            <li class="menu-item"><a href="">Klara A2</a></li>
+                            <li class="menu-item"><a href="">Klara S</a></li>
+                            <li class="menu-item"><a href="">Feliz</a></li>
+                            <li class="menu-item"><a href="">Impes</a></li>
+                            <li class="menu-item"><a href="">Ludo</a></li>
+                        </ul>
+                        <div class="caret-down"></div>
+                    </div>
+                    <div class="l-2 m-4 c-12 list-menu">
+                        <h3 class="menu-title">TIN TỨC NỔI BẬT</h3>
+                        <ul class="menu">
+                            <li class="menu-item"><a href="">Ưu đãi</a></li>
+                            <li class="menu-item"><a href="">Công ty</a></li>
+                            <li class="menu-item"><a href="">Cộng đồng</a></li>
+                        </ul>
+                        <div class="caret-down"></div>
+                    </div>
+                    <div class="l-2 m-4 c-12 list-menu">
+                        <h3 class="menu-title">HỖ TRỢ</h3>
+                        <ul class="menu">
+                            <li class="menu-item"><a href="">Câu hỏi thường gặp</a></li>
+                            <li class="menu-item"><a href="">Hệ thống phân phối</a></li>
+                            <li class="menu-item"><a href="">Đặt lịch bảo dưỡng</a></li>
+                            <li class="menu-item"><a href="">Liên hệ</a></li>
+                        </ul>
+                        <div class="caret-down"></div>
+                    </div>
+                    <div class="l-2 m-4 c-12 list-menu">
+                        <h3 class="menu-title">PHÁP LÝ</h3>
+                        <ul class="menu">
+                            <li class="menu-item"><a href="">Chính sách quyền riêng tư</a></li>
+                            <li class="menu-item"><a href="">Chính sách vận chuyển</a></li>
+                            <li class="menu-item"><a href="">Chính sách đổi trả</a></li>
+                            <li class="menu-item"><a href="">Miễn trừ trách nhiệm</a></li>
+                            <li class="menu-item"><a href="">Điều khoản ký kết thỏa thuận đặc cọc mua Ô tô VF</a></li>
+                            <li class="menu-item"><a href="">Điều kiện sử dụng coockies</a></li>
+                        </ul>
+                        <div class="caret-down"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="l-12 m-12 c-12 menu-copyright">
+                        <div class="list-menu">
+                            <h3 class="menu-title">HỆ SINH THÁI</h3>
+                            <ul class="menu">
+                                <li class="menu-item"><a href="#">Vinhomes</a></li>
+                                <li class="menu-item"><a href="#">Vinmec</a></li>
+                                <li class="menu-item"><a href="#">Vsmart</a></li>
+                                <li class="menu-item"><a href="#">Vinpearl</a></li>
+                            </ul>
+                            <div class="caret-down"></div>
+                        </div>
+                        <div class="copyright">
+                            <img src="./assets/img/vinfast-data-01/bocongthuong_otm.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="l-6 m-12 c-12">
+                        <div class="ft-sp">
+                            <span>Hotline & Customer Service</span>
+                            <a href="tel:1900 232 389">
+                                <i class="fas fa-phone-alt"></i>
+                                <div class="btn-text">
+                                    1900 232 389
+                                    <br>
+                                    <span>( 1000đ/phút )</span>
+                                </div>
+                            </a>
+                            <a href="mailto:cskh@vinfast.vn">
+                                <i class="far fa-envelope"></i>
+                                <div class="btn-text">cskh@vinfast.vn</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="l-6 m-12 c-12 abc">
+                        <div class="switch-language">
+                            <span>Ngôn ngữ</span>
+                            <div class="language-vn active">
+                                <span>VN</span>
+                            </div>
+                            <div class="language-en">
+                                <span>EN</span>
+                            </div>
+                        </div>
+                        <div class="ft-social">
+                            <span>Kết nối với Vinfast</span>
+                            <div class="social-item">
+                                <a href=""><i class="fab fa-facebook"></i></a>
+                                <a href=""><i class="fab fa-facebook"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="./assets/img/vinfast-data-01/bocongthuong_otm.webp" alt="">
+                </div>
+                <div class="ft-company">
+                    <div class="row">
+                        <div class="l-3">
+                            <div class="title_">Công ty TNHH Kinh doanh thương mại và Dịch vụ VinFast</div>
+                            <div class="desc">VinFast. All rights reserved.
+                                <br>
+                                © Copyright 2020
+                            </div>
+                        </div>
+                        <div class="l-9">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="l-6 m-6 c-12">
+                                        <div class="ft-c">
+                                            <div class="icon_">
+                                                <img src="./assets/img/vinfast-data-01/icon-so-dang-ky_1627371453.svg" alt="">
+                                            </div>
+                                            <div class="desc">
+                                                <div class="list_">
+                                                    <span>Số đăng ký kinh doanh:</span>
+                                                    0108926276
+                                                </div>
+                                                <div class="list_">
+                                                    <span>Đăng ký lần đầu:</span>
+                                                    Ngày 01 tháng 10 năm 2019
+                                                </div>
+                                                <div class="list_">
+                                                    <span>Đăng ký thay đổi lần thứ 3:</span>
+                                                    Ngày 17 tháng 03 năm 2020
+                                                    </div>
+                                                <div class="list_">
+                                                    <span>Nơi cấp:</span>
+                                                    Sở Kế hoạch và Đầu tư Thành phố Hà Nội
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="l-6 m-6 c-12">
+                                        <div class="ft-c">
+                                            <div class="icon_">
+                                                <img src="./assets/img/vinfast-data-01/icon-location_1627371457.svg" alt="">
+                                            </div>
+                                            <div class="list_">
+                                                <span>Địa chỉ:</span>
+                                                Số 7, đường Bằng Lăng 1, Khu đô thị sinh thái 
+                                                <br>
+                                                Vinhomes Riverside, Phường Việt Hưng, Quận Long Biên, 
+                                                <br>
+                                                Thành phố Hà Nội, Việt Nam
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <div class="assistive-position-right">
+            <div class="btn-position-right">
+                <div class="comment-right">
+                    <img src="./assets/img/comment.png" alt="">
+                </div>
+                <div class="assistive-text">
+                    <img class="assistive-person" src="./assets/img/livechat-supporter.png" alt="">
+                    <div class="assistive-title">
+                        <div>Bạn cần <br> hỗ trợ gì không ?</div>                                
+                        <span>Chat với chúng tôi để được tư vấn.</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#header">
+                <span class="fas fa-chevron-up click-to-header"></span>
+            </a>
+        </div>
+    </div>
+    <script src="./render.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
