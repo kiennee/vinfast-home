@@ -374,15 +374,7 @@
         font-size: 30px;
         letter-spacing: 0px;
     }
-
-    .block2 .swiper-wrapper {
-        transform: translateX(-175px);
-    }
-
-    .block2 .swiper-wrapper .swiper-slide {
-        width: 374px;
-    }
-
+    
     .item .arthor, .item .quote {
         width: 100%;
     }
@@ -417,7 +409,6 @@
 
     .block2 .swiper-slide {
         width: 502px;
-        margin-right: 20px;
     }
 
     /* Footer */
@@ -536,10 +527,6 @@
 
     .swiper-slide .item {
         max-width: 275px;
-    }
-
-    .block2 .swiper-wrapper {
-        transform: translateX(-290px);
     }
 }
 

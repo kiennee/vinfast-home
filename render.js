@@ -169,3 +169,10 @@ const app = {
 
 app.renderBlock3();
 app.renderBlock4();
+
+const infos = document.querySelectorAll('.info-body-car .desc')
+for(let i = 0; i < infos.length; i++) {
+    if (infos[i].innerHTML === 'undefined') {
+        infos[i].remove();
+    }
+}

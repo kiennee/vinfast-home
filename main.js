@@ -161,10 +161,17 @@ pieCountDowns.forEach(function(pieCountDown, index) {
 const swiperWrapper2 = $(".block2 .swiper-wrapper");
 const swiperSlides2 = $$(".block2 .swiper-slide");
 const pieCountDowns2 = $$(".block2 .swiper-pagination .pie-countdown");
+swiperSlides2.forEach(function(slide, index) {
+    slide.style.width = (window.innerWidth / 2) + "px";
+    next = (window.innerWidth / 2) * 3/2;
+    if (window.innerWidth < 768) {
+        slide.style.width = (window.innerWidth) + "px";
+    }
+})
 const widthSlide2 = swiperSlides2[2].offsetWidth;
-var next = widthSlide2 * 3/2;
+var next = widthSlide2 * 3/2 + 7;
 if (window.innerWidth < 768) {
-    next = widthSlide2 * 2;
+    next = widthSlide2 * 2 + 7;
 }
 let index = 2;
 let pageIndex = 0;
@@ -242,7 +249,6 @@ setInterval(function() {
     if(index3 < 1) {
         index3++;
         next3 = widthSlide3;
-        console.log(index3);
     } else {
         index3 = 0;
         next3 = 0;
@@ -278,7 +284,6 @@ setInterval(function() {
     if(index4 < 1) {
         index4++;
         next4 = widthSlide4;
-        console.log(index4);
     } else {
         index4 = 0;
         next4 = 0;
