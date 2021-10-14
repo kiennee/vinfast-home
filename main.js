@@ -191,9 +191,9 @@ setInterval(function() {
                 pageIndex++;
             }
         } else {
-            next = widthSlide2 * 3/2;
+            next = widthSlide2 * 3/2 + 7;
             if (window.innerWidth < 768) {
-                next = widthSlide2 * 2;
+                next = widthSlide2 * 2 + 3;
             }
             index = 2;
             pageIndex = 0;
@@ -208,9 +208,9 @@ setInterval(function() {
                 pageIndex++;
             }
         } else {
-            next = widthSlide2 * 3/2;
+            next = widthSlide2 * 3/2 + 7;
             if (window.innerWidth < 768) {
-                next = widthSlide2 * 2;
+                next = widthSlide2 * 2 + 3;
             }
             index = 2;
             pageIndex = 0;
